@@ -1634,6 +1634,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "PrimeService/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/PrimeService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PrimeService.dll": {}
+        }
       }
     }
   },
@@ -5625,6 +5635,11 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "PrimeService/1.0.0": {
+      "type": "project",
+      "path": "../PrimeService/PrimeService.csproj",
+      "msbuildProject": "../PrimeService/PrimeService.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5632,6 +5647,7 @@
       "Microsoft.NET.Test.Sdk >= 15.5.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "NUnit3TestAdapter >= 3.9.0",
+      "PrimeService >= 1.0.0",
       "nunit >= 3.9.0"
     ]
   },
@@ -5662,7 +5678,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/jeremysheridanwells/workspace/tutorials/CSharp-TDD-Demo/PrimeService/PrimeService.csproj": {
+              "projectPath": "/Users/jeremysheridanwells/workspace/tutorials/CSharp-TDD-Demo/PrimeService/PrimeService.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
